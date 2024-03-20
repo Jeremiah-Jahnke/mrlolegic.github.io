@@ -6,6 +6,9 @@
     --secondary-color: #60667a;
     --shadow-color: rgba(0, 0, 0, 0.1);
     --border-color: #4D5160;
+
+    --custom-width: 100%;
+    --custom-width-2: 100%;
 }
 
 * {
@@ -193,14 +196,13 @@ hr {
 }
 
 .responsive-image {
-    width: 90%;
+    width: var(--custom-width);
     height: auto;
 }
 
 .responsive-little-image {
-    width: 70%;
+    width: var(--custom-width-2);
     height: auto;
-
 }
 
 @keyframes fadeIn {
@@ -275,4 +277,26 @@ hr {
 
 .slide-in {
     animation: slideInFromLeft 1s ease forwards;
+}
+
+
+@media (min-width: 768px) {
+    :root {
+        --custom-width: 40%;
+        --custom-width-2: 20%;
+    }   
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    :root {
+        --custom-width: 60%;
+        --custom-width-2: 40%;
+    }
+}
+
+@media (min-width: 1024px) {
+    :root {
+        --custom-width: 80%;
+        --custom-width-2: 60%;
+    }
 }
