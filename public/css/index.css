@@ -296,7 +296,7 @@ hr {
 
 @media (min-width: 1024px) {
     :root {
-        --custom-width: 80%;
-        --custom-width-2: 60%;
+        --custom-width: 60%;
+        --custom-width-2: 40%;
     }
 }
