@@ -19,15 +19,14 @@
 
     <body>
         <div class="main-container">
-            <header>
-                <img class="pfp" src="./public/images/pfp.jpg" alt="I am bob">
-                
-                <h2 class="text mb0">Jeremiah J.</h2>
-
-                <p class="text custom-width">
+            <header class="animated-header">
+                <img class="pfp animated-element slide-in" src="./public/images/pfp.jpg" alt="I am bob">
+                <h2 class="text mb0 animated-element">Jeremiah J.</h2>
+                <p class="text custom-width animated-element">
                     Jeremiah J. aka Mr. Lolegic, a 17-year-old nerd with a passion for programming, scripting, AI, and cybersecurity. I love learning new things and building innovative projects.
                 </p>
             </header>
+            
 
             <hr/>
             <section>
@@ -35,50 +34,52 @@
             
                 <div class="carousel-container">
                     <div class="carousel">
-                        <div class="carousel-item">
+                        <div class="carousel-item" onclick="openUrl('https://github.com/MrLolegic/Webfolio')">
                             <img src="./public/images/webfolio.png" alt="Project 1">
                             <div class="carousel-text">
                                 <h3>Webfolio</h3>
                                 <p>A repo filled with web related things I've made.</p>
                                 <div class="project-buttons">
-                                    <a href="https://github.com/MrLolegic/Webfolio"><i class="bi bi-github"></i></a>
+                                    <a><i class="bi bi-github"></i></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item" onclick="openUrl('https://github.com/MrLolegic')">
                             <img src="./public/images/coming-soon.png" alt="Project 1">
                             <div class="carousel-text">
                                 <h3>Mr. Logi</h3>
                                 <p>Coming soon...</p>
                                 <div class="project-buttons">
-                                    <a href="https://github.com/MrLolegic/Webfolio"><i class="bi bi-github"></i></a>
+                                    <a><i class="bi bi-github"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>                
             </section>
 
             <hr/>
-            <section>
+            <section class="animated-element">
                 <h2 class="text">Github Stats</h2>
-                <img class="mb1" src="https://github-readme-streak-stats.herokuapp.com/?user=mrlolegic&theme=vue-dark&hide_border=false"/>
-                <img class="mb1" src="https://github-readme-stats.vercel.app/api?username=mrlolegic&theme=vue-dark&show_icons=true&hide_border=false&count_private=true">
-                <img class="mb1" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mrlolegic&theme=vue-dark&show_icons=true&hide_border=false&layout=compact">
+                <img class="mb1 responsive-image" src="https://github-readme-streak-stats.herokuapp.com/?user=mrlolegic&theme=vue-dark&hide_border=false"/>
+                <img class="mb1 responsive-image" src="https://github-readme-stats.vercel.app/api?username=mrlolegic&theme=vue-dark&show_icons=true&hide_border=false&count_private=true">
+                <img class="mb1 responsive-little-image" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mrlolegic&theme=vue-dark&show_icons=true&hide_border=false&layout=compact">
             </section>
             
             <hr/>
-            <footer>
+            <footer class="animated-footer">
                 <h2 class="text text-medium mb0"><a class="custom-a" href="https://roblox.com">Roblox - Click Me!!</a></h2>
                 <nav>
                     <ul class="icons">
-                        <li><a href="https://github.com/MrLolegic"><i class="bi bi-github"></i></a></li>
-                        <li><a href="https://discord.gg/fwxE3uMy3A"><i class="bi bi-discord"></i></a></li>
+                        <li><a href="https://roblox.com" target="_blank"><img width="25" height="25" src="https://img.icons8.com/ios-filled/50/4D5160/roblox.png" alt="roblox"/></a></li>
+                        <li><a href="https://github.com/MrLolegic" target="_blank"><i class="icon-animated bi bi-github"></i></a></li>
+                        <li><a href="https://discord.gg/fwxE3uMy3A" target="_blank"><i class="icon-animated bi bi-discord"></i></a></li>
                     </ul>
                 </nav>
-                <h3 class="text sm-text">&copy; • Jeremiah J.</h3>
-            </footer>
+                <h3 class="text sm-text animated-element">&copy; • Jeremiah J.</h3>
+            </footer>            
         </div>
+        <script src="./public/javascript/utilities.js"></script>
         <script src="./public/javascript/carousel.js"></script>
     </body>
 </html>
