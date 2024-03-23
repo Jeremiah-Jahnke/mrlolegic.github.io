@@ -263,6 +263,10 @@ hr {
     animation: fadeIn 1s ease forwards;
 }
 
+.animated-carousel .animated-element {
+    animation: slideInFromLeft 1s ease forwards;
+}
+
 .animated-header .animated-element {
     animation: slideInFromLeft 1s ease forwards;
 }
