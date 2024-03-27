@@ -66,7 +66,6 @@ function setCanvasSize() {
     canvas.height = window.innerHeight;
 }
 
-// Initialize the canvas and blobs
 const canvas = document.getElementById("blobs-canvas");
 const ctx = canvas.getContext("2d");
 const blobs = [];
@@ -80,14 +79,11 @@ const colors = [
     "rgba(157, 161, 176, 0.6)"
 ];
 
-// Create initial blobs
 for (let i = 0; i < 10; i++) {
     blobs.push(createBlob());
 }
 
-// Set canvas size and listen for window resize event
 setCanvasSize();
 window.addEventListener("resize", setCanvasSize);
 
-// Start the animation
 animate();
