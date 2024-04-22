@@ -79,11 +79,12 @@ const colors = [
     "rgba(157, 161, 176, 0.6)"
 ];
 
+setCanvasSize();
+
 for (let i = 0; i < 10; i++) {
     blobs.push(createBlob());
 }
 
-setCanvasSize();
 window.addEventListener("resize", setCanvasSize);
 
 animate();
